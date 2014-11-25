@@ -6,7 +6,9 @@ This is Document Picker and Document Provider Sample in iOS 8.0+.
 1. In Xcode, please set up below:
 	
   (1) Capability of DocumentPickerSample : iCloud = ON, App Groups = ON
+  
   (2) Capability of DocumentProvider : App Groups = ON 
+  
   (3) Capability of DocumentProviderFileProvider : App Groups = ON
 
   and Fix Issues.
