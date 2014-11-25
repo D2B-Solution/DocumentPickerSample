@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DocumentPickerSample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>DocumentProvider.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>DocumentProviderFileProvider.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9D3D91031A235A18002D806F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D3D911C1A235A18002D806F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D8517AE1A235B1A00B90D20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D8517BC1A235B1A00B90D20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D8517E31A236B1E00B90D20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D8517F11A236B1E00B90D20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

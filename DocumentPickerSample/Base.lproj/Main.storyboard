@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAj-VQ-DIn">
+                                <rect key="frame" x="220" y="28" width="30" height="30"/>
+                                <state key="normal" title="Text">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayDocumentPickerForText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzJ-60-HPB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdc-1G-RrV">
+                                <rect key="frame" x="350" y="28" width="42" height="30"/>
+                                <state key="normal" title="HTML">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayDocumentPickerForHTML:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfB-Ra-JJG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sq-HR-1Bf">
+                                <rect key="frame" x="16" y="94" width="268" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4YC-fP-IXR">
+                                <rect key="frame" x="16" y="66" width="568" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMj-In-oRs">
+                                <rect key="frame" x="316" y="94" width="268" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Sq-HR-1Bf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="0Jy-Jq-coX"/>
+                            <constraint firstItem="4YC-fP-IXR" firstAttribute="top" secondItem="SAj-VQ-DIn" secondAttribute="bottom" constant="8" id="4rs-S0-mn3"/>
+                            <constraint firstAttribute="trailing" secondItem="4YC-fP-IXR" secondAttribute="trailing" constant="16" id="DUO-2v-aRZ"/>
+                            <constraint firstItem="Kdc-1G-RrV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="EH6-ze-PBE"/>
+                            <constraint firstAttribute="centerX" secondItem="9Sq-HR-1Bf" secondAttribute="trailing" constant="16" id="Los-8C-5yd"/>
+                            <constraint firstItem="cMj-In-oRs" firstAttribute="top" secondItem="4YC-fP-IXR" secondAttribute="bottom" constant="8" id="MCJ-m2-aeI"/>
+                            <constraint firstAttribute="bottom" secondItem="cMj-In-oRs" secondAttribute="bottom" constant="20" id="NA8-bQ-PUK"/>
+                            <constraint firstAttribute="centerX" secondItem="4YC-fP-IXR" secondAttribute="centerX" id="Nuy-4p-d7H"/>
+                            <constraint firstAttribute="bottom" secondItem="9Sq-HR-1Bf" secondAttribute="bottom" constant="20" id="Nye-rN-fit"/>
+                            <constraint firstAttribute="centerX" secondItem="SAj-VQ-DIn" secondAttribute="trailing" constant="50" id="dTE-RB-M2l"/>
+                            <constraint firstAttribute="trailing" secondItem="cMj-In-oRs" secondAttribute="trailing" constant="16" id="jsB-Pp-J4K"/>
+                            <constraint firstItem="cMj-In-oRs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="16" id="ldU-rW-hFb"/>
+                            <constraint firstItem="SAj-VQ-DIn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="oSO-rN-pSl"/>
+                            <constraint firstItem="Kdc-1G-RrV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="qTO-VY-TEM"/>
+                            <constraint firstItem="4YC-fP-IXR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="rfy-ca-xdC"/>
+                            <constraint firstItem="9Sq-HR-1Bf" firstAttribute="top" secondItem="4YC-fP-IXR" secondAttribute="bottom" constant="8" id="xWm-jm-dMa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentOfFile" destination="9Sq-HR-1Bf" id="lN9-LD-RCI"/>
+                        <outlet property="contentOfURL" destination="cMj-In-oRs" id="ESn-8x-w53"/>
+                        <outlet property="nameOfFile" destination="4YC-fP-IXR" id="jP5-Qz-SJi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
